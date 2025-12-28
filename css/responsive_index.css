@@ -1,0 +1,242 @@
+@media (max-width: 1200px) {
+
+  section {
+    padding: 0 60px;
+  }
+
+  .header_content {
+    width: 70%;
+  }
+
+  .header_content h1 {
+    font-size: 55px;
+  }
+
+  .included .container .card_cluded {
+    width: calc(100% / 3 - 20px);
+  }
+
+  .card {
+    width: calc(100% / 4 - 20px);
+  }
+
+  .container .card_plan {
+    width: calc(100% / 3 - 20px);
+  }
+}
+
+@media (max-width: 992px) {
+
+  section {
+    padding: 0 40px;
+  }
+
+  /* Navbar */
+  .container_navbar {
+    padding: 10px 40px;
+  }
+
+  .link {
+    width: 70%;
+  }
+
+  .login {
+    width: 30%;
+  }
+
+  /* Header */
+  .header_content {
+    width: 85%;
+  }
+
+  .header_content h1 {
+    font-size: 45px;
+  }
+
+  .head_review {
+    flex-direction: column;
+    position: static;
+    margin-top: 40px;
+  }
+
+  /* About */
+  .about {
+    flex-direction: column;
+    padding: 150px 40px;
+  }
+
+  .img_about,
+  .about_we {
+    width: 100%;
+  }
+
+  /* Included */
+  .included .container .card_cluded {
+    width: calc(100% / 2 - 20px);
+  }
+
+  /* Rental */
+  .card {
+    width: calc(100% / 3 - 20px);
+  }
+
+  /* Plans */
+  .container .card_plan {
+    width: calc(100% / 2 - 20px);
+  }
+
+  /* Comment */
+  .comment .head_sec {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .comment .head_sec .reat {
+    width: 100%;
+  }
+
+  .comment .card {
+    width: calc(100% / 2 - 20px);
+  }
+
+  /* FAQ */
+  .questions {
+    flex-direction: column;
+  }
+
+  .cont,
+  .faq {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+
+  section {
+    padding: 0 25px;
+  }
+
+  /* Navbar */
+  nav {
+    height: auto;
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  .container_navbar {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .link {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .login {
+    width: 100%;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  /* Header */
+  header {
+    height: auto;
+    padding: 120px 20px 200px;
+  }
+
+  .header_content {
+    width: 100%;
+  }
+
+  .header_content h1 {
+    font-size: 36px;
+  }
+
+  /* Slider */
+  .card_slid {
+    flex-direction: column;
+  }
+
+  .card_slid .user,
+  .img_slid {
+    width: 100%;
+  }
+
+  /* Rental */
+  .card {
+    width: calc(100% / 2 - 20px);
+  }
+
+  /* Plans */
+  .container .card_plan {
+    width: 100%;
+  }
+
+  /* Comment */
+  .comment .card {
+    width: 100%;
+  }
+
+  /* Support */
+  .support > p {
+    width: 100%;
+    font-size: 32px;
+  }
+
+  .support .req {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+
+@media (max-width: 575px) {
+
+  section {
+    padding: 0 15px;
+  }
+
+  /* Header */
+  .header_content h1 {
+    font-size: 28px;
+  }
+
+  button {
+    padding: 15px 20px;
+    font-size: 15px;
+  }
+
+  /* About */
+  .about_we h3 {
+    font-size: 26px;
+  }
+
+  /* Included */
+  .included .container .card_cluded {
+    width: 100%;
+  }
+
+  /* Rental */
+  .card {
+    width: 100%;
+  }
+
+  /* Support */
+  .support {
+    padding: 60px 20px;
+  }
+
+  .support > p {
+    font-size: 24px;
+  }
+
+  /* Footer */
+  .foot {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+}
