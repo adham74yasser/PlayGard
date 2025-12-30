@@ -1,242 +1,210 @@
-@media (max-width: 1200px) {
+/* ============================================================
+   RESPONSIVE CSS (Using your existing classes)
+   ============================================================ */
 
-  section {
-    padding: 0 60px;
+/* للشاشات المتوسطة (Tablets) واللاب توب الصغير */
+@media (max-width: 1100px) {
+  
+    nav ul {
+        display: none; /* إخفاء القائمة في الموبايل لأنها تحتاج زر Toggle */
+    }
+    .login {
+      width: 25%;
   }
+    section {
+        padding: 0 40px;
+    }
+    
+    .container_navbar {
+        padding: 10px 40px;
+    }
 
-  .header_content {
-    width: 70%;
-  }
+    .header_content {
+        width: 80%;
+    }
 
-  .header_content h1 {
-    font-size: 55px;
-  }
+    .header_content h1 {
+        font-size: 50px;
+    }
 
-  .included .container .card_cluded {
-    width: calc(100% / 3 - 20px);
-  }
-
-  .card {
-    width: calc(100% / 4 - 20px);
-  }
-
-  .container .card_plan {
-    width: calc(100% / 3 - 20px);
-  }
+    .about {
+        padding: 100px 40px;
+    }
 }
 
-@media (max-width: 992px) {
-
-  section {
-    padding: 0 40px;
-  }
-
-  /* Navbar */
-  .container_navbar {
-    padding: 10px 40px;
-  }
-
-  .link {
-    width: 70%;
-  }
-
-  .login {
-    width: 30%;
-  }
-
-  /* Header */
-  .header_content {
-    width: 85%;
-  }
-
-  .header_content h1 {
-    font-size: 45px;
-  }
-
-  .head_review {
-    flex-direction: column;
-    position: static;
-    margin-top: 40px;
-  }
-
-  /* About */
-  .about {
-    flex-direction: column;
-    padding: 150px 40px;
-  }
-
-  .img_about,
-  .about_we {
-    width: 100%;
-  }
-
-  /* Included */
-  .included .container .card_cluded {
-    width: calc(100% / 2 - 20px);
-  }
-
-  /* Rental */
-  .card {
-    width: calc(100% / 3 - 20px);
-  }
-
-  /* Plans */
-  .container .card_plan {
-    width: calc(100% / 2 - 20px);
-  }
-
-  /* Comment */
-  .comment .head_sec {
-    flex-direction: column;
-    text-align: center;
-    gap: 30px;
-  }
-
-  .comment .head_sec .reat {
-    width: 100%;
-  }
-
-  .comment .card {
-    width: calc(100% / 2 - 20px);
-  }
-
-  /* FAQ */
-  .questions {
-    flex-direction: column;
-  }
-
-  .cont,
-  .faq {
-    width: 100%;
-  }
-}
-
+/* للشاشات الصغيرة (Mobile - 768px and down) */
 @media (max-width: 768px) {
+    
+    /* Navbar - تحويل الروابط لتختفي أو تترتب */
+    .container_navbar {
+        padding: 10px 20px;
+        flex-direction: column;
+        height: auto;
+    }
+    
+    .link {
+        width: 100%;
+        flex-direction: column;
+        gap: 15px;
+        margin-bottom: 15px;
+    }
 
-  section {
-    padding: 0 25px;
-  }
+    nav ul {
+        display: none; /* إخفاء القائمة في الموبايل لأنها تحتاج زر Toggle */
+    }
 
-  /* Navbar */
-  nav {
-    height: auto;
-  }
+    .login {
+        width: 100%;
+        justify-content: center;
+        gap: 10px;
+    }
 
-  nav ul {
-    display: none;
-  }
+    /* Header Section */
+    header {
+        height: auto;
+        padding-top: 150px;
+        padding-bottom: 50px;
+    }
 
-  .container_navbar {
-    flex-direction: column;
-    gap: 15px;
-  }
+    .header_content {
+        width: 100%;
+    }
 
-  .link {
-    width: 100%;
-    justify-content: space-between;
-  }
+    .header_content h1 {
+        font-size: 34px;
+    }
 
-  .login {
-    width: 100%;
-    justify-content: center;
-    gap: 20px;
-  }
+    /* تحويل العناصر الـ Absolute إلى وضع طبيعي لمنع التداخل */
+    .head_review {
+        position: static;
+        flex-direction: column;
+        gap: 20px;
+        margin-top: 50px;
+    }
 
-  /* Header */
-  header {
-    height: auto;
-    padding: 120px 20px 200px;
-  }
+    .card_review {
+        flex-direction: column;
+        height: auto;
+    }
 
-  .header_content {
-    width: 100%;
-  }
+    .user {
+        width: 100%;
+        text-align: center;
+        align-items: center;
+    }
 
-  .header_content h1 {
-    font-size: 36px;
-  }
+    /* About Section */
+    .about {
+        flex-direction: column;
+        padding: 60px 20px;
+        text-align: center;
+    }
 
-  /* Slider */
-  .card_slid {
-    flex-direction: column;
-  }
+    .img_about, .about_we {
+        width: 100%;
+    }
 
-  .card_slid .user,
-  .img_slid {
-    width: 100%;
-  }
+    .ablist {
+        flex-direction: column;
+        text-align: center;
+    }
 
-  /* Rental */
-  .card {
-    width: calc(100% / 2 - 20px);
-  }
+    .ablist img {
+        padding-right: 0;
+        margin-bottom: 15px;
+    }
 
-  /* Plans */
-  .container .card_plan {
-    width: 100%;
-  }
+    /* Cards & Grids (تحويل الـ width الثابت إلى 100%) */
+    .included .container .card_cluded,
+    .card,
+    .container .card_plan,
+    .comment .card {
+        width: 100% !important;
+        margin-bottom: 15px;
+    }
 
-  /* Comment */
-  .comment .card {
-    width: 100%;
-  }
+    .included .head_sec h4,
+    .rental .head_sec h4,
+    .plans .head_sec h4 {
+        width: 100%;
+        font-size: 28px;
+    }
 
-  /* Support */
-  .support > p {
-    width: 100%;
-    font-size: 32px;
-  }
+    /* Rental Section Title */
+    .title {
+        flex-direction: column;
+        padding: 0 20px 30px;
+        gap: 20px;
+    }
 
-  .support .req {
-    flex-direction: column;
-    gap: 15px;
-  }
-}
+    .link_title {
+        gap: 15px;
+        font-size: 14px;
+    }
 
-@media (max-width: 575px) {
+    /* Comment Section */
+    .comment .head_sec {
+        flex-direction: column;
+        text-align: center;
+        margin: 20px;
+    }
 
-  section {
-    padding: 0 15px;
-  }
+    .comment .head_sec .title_head p,
+    .comment .head_sec .reat {
+        width: 100%;
+    }
 
-  /* Header */
-  .header_content h1 {
-    font-size: 28px;
-  }
+    /* Support Section */
+    .support {
+        padding: 40px 20px;
+        margin: 100px 0;
+    }
 
-  button {
-    padding: 15px 20px;
-    font-size: 15px;
-  }
+    .support > p {
+        font-size: 28px;
+        width: 100%;
+    }
 
-  /* About */
-  .about_we h3 {
-    font-size: 26px;
-  }
+    .support .req {
+        flex-direction: column;
+        gap: 10px;
+    }
 
-  /* Included */
-  .included .container .card_cluded {
-    width: 100%;
-  }
+    .support .button {
+        flex-direction: column;
+        width: 100%;
+    }
 
-  /* Rental */
-  .card {
-    width: 100%;
-  }
+    /* FAQ Section */
+    .questions {
+        flex-direction: column;
+        padding: 0 20px;
+    }
 
-  /* Support */
-  .support {
-    padding: 60px 20px;
-  }
+    .cont, .faq {
+        width: 100%;
+    }
 
-  .support > p {
-    font-size: 24px;
-  }
+    /* Footer */
+    footer .container {
+        flex-direction: column;
+        gap: 30px;
+        padding: 20px;
+    }
 
-  /* Footer */
-  .foot {
-    flex-direction: column;
-    gap: 20px;
-    text-align: center;
-  }
+    .about_foot {
+        margin-right: 0;
+        text-align: center;
+    }
+
+    .icon_foot {
+        justify-content: center;
+    }
+
+    .foot {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+        text-align: center;
+    }
 }
